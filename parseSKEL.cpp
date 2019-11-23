@@ -94,8 +94,7 @@ ParseTree *Stmt(istream& in, int& line) {
     case END:
           Parser::PushBackToken(tok);  
             return 0;
-	case DONE:
-		return 0;
+	
         
 	default:
             if (s==0 && tok !=DONE){
